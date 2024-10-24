@@ -1,9 +1,205 @@
-.open-sans {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.button-styling {
+    width: 100%;
+    font-size: 0.75rem;
+    color: #ffffff;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9fafc;
+    margin: 10px;
+    overflow: hidden;
 }
 
+.content-section {
+    width: 50%; 
+    margin-right: auto; 
+    margin-left: auto; 
+}
+
+blockquote {
+    font-family: 'Open Sans';
+    color:#69696a;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-left: 2px solid; 
+    margin-left: 1%;
+    width: 100%; 
+}
+
+header {
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 1rem;
+}
+ 
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-weight: 400;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a,
+main a {
+    text-decoration: none;
+    font-size: 0.75 rem;
+    color: #69696a;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+main section h2 {
+    margin: 10px 0;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(247, 193, 162, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    padding-inline: 10px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    color: #69696a;
+    padding: 5px 0 5px 5px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #69696a;
+    padding: 5px 10px;
+
+}
+
+#button {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px 5px 0;
+    } 
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+   
+    h2 {
+        margin-top: 0;
+    }
+
+    .footer-links div {
+        padding-top: 10px;
+
+    }
+  
+    .circle-group {
+        width: 50%;
+        position: relative;
+    }
+
+    .circle-one {
+        width: 200px;
+        height: 200px;
+        background: rgba(247, 136, 167, 0.6);
+        opacity: 80%;
+        border-radius: 50%;
+        position: absolute;
+        right: 75px;
+    }
+
+    .circle-two {
+        width: 175px;
+        height: 175px;
+        background: rgba(247, 193, 162, 0.7);
+        opacity: 80%;
+        border-radius: 50%;
+        position: absolute;
+        right: 5px;
+        top: 100px;
+    }
+
+    .circle-three {
+        width: 125px;
+        height: 125px;
+        background: rgba(207, 130, 213, 0.6);
+        opacity: 80%;
+        border-radius: 50%;
+        position: absolute;
+        right: 5px;
+        top: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content-section {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    blockquote {
+        margin-left: 0; 
+    }
+}
