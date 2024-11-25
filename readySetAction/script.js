@@ -27,5 +27,6 @@ const main = () => {
         header.textContent = `Welcome ${userName}!`; 
     });
 };
+
 main();
 
