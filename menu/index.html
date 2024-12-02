@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <button onclick="openMenu()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>    
+        </div>
+    </header>
+
+    <div id="toggleMenu" style="display: none;">
+        <ul>
+            <li><a href="#Letters" onclick="switchMenu('letters'); event.preventDefault();">Letters</a></li>
+            <li><a href="#Numbers" onclick="switchMenu('numbers'); event.preventDefault();">Numbers</a></li>
+        </ul>        
+    </div>
+
+    <div id="letters-and-numbers-menu">
+        <div id="letters-menu" style="display: contents;">
+            <span id="letters-displayed">
+                <div>
+                    A B C D E F G H I J K L M
+                </div>
+                <div>
+                    N O P Q R S T U V W X Y Z
+                </div>    
+            </span>
+        </div>
+        <div id="numbers-menu" style="display: none;">
+            <span id="numbers-displayed">
+                <div>
+                    1 2 3 4 5 6 7 8 9 10
+                </div>  
+            </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html> 
+
