@@ -6,8 +6,8 @@ const main = () => {
     removeParagraph.classList.remove("big"); 
 
     const listItems = document.querySelectorAll('li');
-    listItems.forEach(item => {
-    console.log(item.textContent);
+        listItems.forEach(item => {
+        console.log(item.textContent);
     });
 
     const link = document.querySelector('a.link'); 
